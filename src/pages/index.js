@@ -5,6 +5,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Developer from "../components/developer"
 import Education from "../components/education"
+import Work from "../components/work"
 
 const IndexPage = ({ data }) => {
   const { basics, resume } = data
@@ -13,6 +14,7 @@ const IndexPage = ({ data }) => {
       <SEO title="Home" />
       <Developer {...basics} />
       <Education {...resume} />
+      <Work {...resume} />
     </Layout>
   )
 }
@@ -46,6 +48,16 @@ export const query = graphql`
         startDate
         endDate
         description
+      }
+      work {
+        company
+        position
+        website
+        location
+        summary
+        isCurrentRole
+        startDate
+        endDate
       }
     }
   }
