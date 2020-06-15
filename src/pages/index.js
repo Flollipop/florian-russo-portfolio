@@ -3,12 +3,18 @@ import { graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import Developer from "../components/developer"
 
-const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-  </Layout>
-)
+const IndexPage = ({ data }) => {
+  const { basics } = data
+  return (
+    <Layout>
+      <SEO title="Home" />
+      <Developer {...basics} />
+    </Layout>
+  )
+}
+
 export const query = graphql`
   query HomePageQuery {
     basics {
