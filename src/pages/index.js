@@ -23,9 +23,6 @@ export const query = graphql`
       following
       headline
       label
-      location {
-        id
-      }
       name
       picture
       profiles {
