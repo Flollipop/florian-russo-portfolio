@@ -9,7 +9,7 @@ const Developer = ({ label, headline, name, picture, summary }) => (
     }}
     id="about"
   >
-    <div className="max-w-sm rounded flex-col shadow-lg bg-gray-100 bg-opacity-15 p-1 shadow-2xl m-0">
+    <div className="max-w-md rounded flex-col shadow-lg bg-gray-100 bg-opacity-15 p-1 shadow-2xl m-0">
       <div className="rounded overflow-hidden flex-wrap flex-col shadow-lg bg-gray-100 bg-opacity-50 shadow-base">
         <div className="border-b px-4 py-4">
           <div className="text-center sm:text-left flex mb-4 content-center items-baseline">
