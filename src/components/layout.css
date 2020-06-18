@@ -3,3 +3,23 @@
 @tailwind components;
 
 @tailwind utilities;
+
+@responsive {
+  .bg-r-gradient {
+    background-image: radial-gradient(
+      rgba(127, 199, 231, 0) 0%,
+      rgba(207, 204, 255, 0.3) 45%,
+      rgba(247, 250, 242, 0.8) 100%
+    );
+  }
+}
+
+@responsive {
+  .bg-l-gradient {
+    background-image: linear-gradient(
+      0deg,
+      rgba(247, 250, 252, 1) 0%,
+      rgba(255, 255, 255, 0) 100%
+    );
+  }
+}
