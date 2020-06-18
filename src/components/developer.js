@@ -10,16 +10,18 @@ const Developer = ({ label, headline, name, picture, summary }) => (
     id="about"
   >
     <div className="max-w-md rounded flex-col shadow-lg bg-gray-100 bg-opacity-15 p-1 shadow-2xl m-0">
-      <div className="rounded overflow-hidden flex-wrap flex-col shadow-lg bg-gray-100 bg-opacity-50 shadow-base">
-        <div className="border-b px-4 py-4">
-          <div className="text-center sm:text-left flex mb-4 content-center items-baseline">
-            <img
-              className="h-32 w-32 rounded-full border-1 border-white flex-initial self-center shadow-2xl"
-              src={picture}
-              alt=""
-            />
-            <div className="flex-initial self-center px-3">
-              <h1 className="w-full text-xl font-bold py-1 leading-tight text-center text-gray-800">
+      <div className="rounded overflow-hidden flex-wrap flex-col shadow-lg bg-r-gradient shadow-base">
+        <div className=" px-4 py-4 bg-l-gradient">
+          <div className="text-center sm:text-left flex-row md:flex mb-4">
+            <div className="flex justify-center">
+              <img
+                className="h-32 w-32 rounded-full shadow-2xl"
+                src={picture}
+                alt=""
+              />
+            </div>
+            <div className="flex-initial self-center text-center md:text-left px-3 ">
+              <h1 className="w-full text-xl font-bold py-1 leading-tight text-gray-800">
                 {name}
               </h1>
               <p className="w-full text-md font-light leading-normal text-gray-900">
