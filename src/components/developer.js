@@ -22,7 +22,7 @@ const Developer = ({ label, headline, name, picture, summary }) => (
               <h1 className="w-full text-xl font-bold py-1 leading-tight text-center text-gray-800">
                 {name}
               </h1>
-              <p className="w-full text-md font-light leading-normal text-center text-gray-900">
+              <p className="w-full text-md font-light leading-normal text-gray-900">
                 {label}
               </p>
               <p className="w-full mb-1 text-sm italic font-normal text-gray-900">
