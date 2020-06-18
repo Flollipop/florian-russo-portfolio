@@ -32,12 +32,12 @@ const Developer = ({ label, headline, name, picture, summary }) => (
           </div>
         </div>
         <div className="bg-gray-100 text-left p-4">
-          <p className="w-full text-md font-bold leading-tight text-gray-900">
-            About
-          </p>
-          <p className="w-full text-md font-normal tracking-tight text-gray-600">
-            {summary}
-          </p>
+          <p className="w-full text-md font-bold text-gray-900">About</p>
+          <div className="leading-none tracking-tighter">
+            <text className="w-full text-md font-light whitespace-pre-line text-gray-600">
+              {summary}
+            </text>
+          </div>
         </div>
       </div>
     </div>
