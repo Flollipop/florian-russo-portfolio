@@ -4,6 +4,7 @@ import PropTypes from "prop-types"
 export function SectionTitle({ title }) {
   return (
     <div className="max-w-7xl w-full flex self-center">
+      <span className="anchor-offset" id={title.toLowerCase()} />
       <h3 className="text-xl font-bold text-gray-800 px-6 py-4">{title}</h3>
     </div>
   )

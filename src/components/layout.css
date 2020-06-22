@@ -4,6 +4,12 @@
 
 @tailwind utilities;
 
+.anchor-offset {
+  margin-top: -65px;
+  height: 65px;
+  visibility: hidden;
+}
+
 @responsive {
   .bg-r-gradient {
     background-image: radial-gradient(
