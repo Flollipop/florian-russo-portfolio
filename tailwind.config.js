@@ -343,6 +343,7 @@ module.exports = {
       "4xl": "56rem",
       "5xl": "64rem",
       "6xl": "72rem",
+      "7xl": "79rem",
       full: "100%",
       ...breakpoints(theme("screens")),
     }),
