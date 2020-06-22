@@ -4,7 +4,7 @@ import React from "react"
 function HeaderButton({ label, href }) {
   return (
     <a
-      href={`#${href}`}
+      href={`#${href ? href : label.toLowerCase()}`}
       className="flex w-24 justify-center text-white hover:bg-gray-700 h-16 py-6 px-4 hover:border-solid border-blue-100 hover:border-b-2"
     >
       {label}
@@ -14,7 +14,7 @@ function HeaderButton({ label, href }) {
 
 HeaderButton.prototype = {
   label: PropTypes.string.isRequired,
-  href: PropTypes.string.isRequired,
+  href: PropTypes.string,
 }
 
 const Header = ({ siteTitle }) => (
@@ -23,9 +23,9 @@ const Header = ({ siteTitle }) => (
       <span className="font-semibold text-xl tracking-tight">{siteTitle}</span>
     </div>
     <div className="text-sm w-full flex-grow flex h-16">
-      <HeaderButton label={"About"} href={"about"} />
-      <HeaderButton label={"Education"} href={"education"} />
-      <HeaderButton label={"Work"} href={"work"} />
+      <HeaderButton label={"About"} />
+      <HeaderButton label={"Education"} />
+      <HeaderButton label={"Work"} />
     </div>
   </nav>
 )
