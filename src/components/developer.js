@@ -1,6 +1,6 @@
 import React from "react"
 import PropTypes from "prop-types"
-import Profiles from "./Profiles"
+import Profiles from "./profiles"
 
 const Developer = ({ label, headline, name, picture, summary, profiles }) => (
   <section
