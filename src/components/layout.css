@@ -11,7 +11,7 @@
 }
 
 .vertical-timeline-element-content {
-  @apply border-solid border-t-2;
+  @apply border-solid border-t-2 max-w-lg;
 }
 
 .vertical-timeline-element--work .vertical-timeline-element-content {
