@@ -1,7 +1,8 @@
 import React from "react"
 import PropTypes from "prop-types"
+import Profiles from "./Profiles"
 
-const Developer = ({ label, headline, name, picture, summary }) => (
+const Developer = ({ label, headline, name, picture, summary, profiles }) => (
   <section
     className="font-sans antialiased bg-center bg-cover flex justify-center items-center py-6 px-3 min-h-screen"
     style={{
@@ -39,6 +40,9 @@ const Developer = ({ label, headline, name, picture, summary }) => (
             <text className="w-full font-light whitespace-pre-line text-gray-600">
               {summary}
             </text>
+            <div className="flex justify-center">
+              <Profiles profiles={profiles} />
+            </div>
           </div>
         </div>
       </div>
@@ -52,6 +56,7 @@ Developer.propTypes = {
   name: PropTypes.string.isRequired,
   picture: PropTypes.string.isRequired,
   summary: PropTypes.string.isRequired,
+  profiles: PropTypes.array,
 }
 
 export default Developer
