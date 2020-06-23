@@ -5,7 +5,8 @@ import Profiles from "./profiles"
 const Footer = ({ name, profiles }) => (
   <footer className="w-full flex flex-col bg-gray-900 text-center text-white py-8">
     <p>
-      made by {name} © {new Date().getFullYear()}, Built with
+      made by <span className="font-semibold text-blue-400">{name}</span> ©{" "}
+      {new Date().getFullYear()}, Built with
       {` `}
       <a
         className="text-purple-500"
