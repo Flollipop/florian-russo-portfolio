@@ -35,7 +35,7 @@ const Developer = ({ label, headline, name, picture, summary }) => (
         </div>
         <div className="bg-gray-100 text-left p-4">
           <p className="w-full text-md font-bold text-gray-900">About</p>
-          <div className="leading-none tracking-tighter">
+          <div className="leading-tight tracking-tighter">
             <text className="w-full text-md font-light whitespace-pre-line text-gray-600">
               {summary}
             </text>
