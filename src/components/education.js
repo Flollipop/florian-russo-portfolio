@@ -9,9 +9,11 @@ const Education = ({ education }) => (
   <section className="bg-blue-100 flex-col flex">
     <SectionTitle title={"Education"} />
     <VerticalTimeline>
-      {education.map(school => (
-        <SchoolItem {...school} key={school.institution + school.startDate} />
-      ))}
+      {education
+        .sort((a, b) => Date.parse(a.startDate) - Date.parse(b.startDate))
+        .map(school => (
+          <SchoolItem {...school} key={school.institution + school.startDate} />
+        ))}
     </VerticalTimeline>
   </section>
 )

@@ -7,10 +7,12 @@ import Developer from "../components/developer"
 import Education from "../components/education"
 import Work from "../components/work"
 
+const sections = ["About", "Education", "Work"]
+
 const IndexPage = ({ data }) => {
   const { basics, resume } = data
   return (
-    <Layout>
+    <Layout sections={sections}>
       <SEO title="Home" />
       <Developer {...basics} />
       <Education {...resume} />

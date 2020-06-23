@@ -17,21 +17,22 @@ HeaderButton.prototype = {
   href: PropTypes.string,
 }
 
-const Header = ({ siteTitle }) => (
+const Header = ({ siteTitle, sections }) => (
   <nav className="flex items-center justify-between flex-row bg-gray-800 sticky top-0 z-50">
     <div className="flex px-4 items-center flex-shrink-0 text-white mr-6 hidden md:block">
       <span className="font-semibold text-xl tracking-tight">{siteTitle}</span>
     </div>
     <div className="text-sm w-full flex-grow flex h-16">
-      <HeaderButton label={"About"} />
-      <HeaderButton label={"Education"} />
-      <HeaderButton label={"Work"} />
+      {sections.map(sectionLabel => (
+        <HeaderButton label={sectionLabel} id={sectionLabel} />
+      ))}
     </div>
   </nav>
 )
 
 Header.propTypes = {
   siteTitle: PropTypes.string,
+  sections: PropTypes.arrayOf(PropTypes.string).isRequired,
 }
 
 Header.defaultProps = {
