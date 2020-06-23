@@ -17,9 +17,15 @@ export const SchoolItem = ({
     iconStyle={{ background: "rgb(144,205,244)", color: "#fff" }}
     icon={<MdSchool />}
   >
-    <h3 className="vertical-timeline-element-title">{institution}</h3>
-    <h4 className="vertical-timeline-element-subtitle">{studyType}</h4>
-    <p>{description}</p>
+    <h4 className="vertical-timeline-element-title w-full text-lg font-bold py-1 leading-tight text-gray-800">
+      {institution}
+    </h4>
+    <h5 className="vertical-timeline-element-subtitle w-full text-lg py-1 leading-tight text-gray-800">
+      {studyType}
+    </h5>
+    <text className="text-md font-light whitespace-pre-line text-gray-700">
+      {`${description}\n`}
+    </text>
   </VerticalTimelineElement>
 )
 
