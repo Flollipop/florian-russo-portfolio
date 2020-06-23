@@ -10,6 +10,18 @@
   visibility: hidden;
 }
 
+.vertical-timeline-element-content {
+  @apply border-solid border-t-2;
+}
+
+.vertical-timeline-element--work .vertical-timeline-element-content {
+  @apply border-red-300;
+}
+
+.vertical-timeline-element--education .vertical-timeline-element-content {
+  @apply border-blue-300;
+}
+
 @responsive {
   .bg-r-gradient {
     background-image: radial-gradient(
