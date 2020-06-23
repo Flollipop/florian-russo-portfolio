@@ -12,7 +12,7 @@ const sections = ["About", "Education", "Work"]
 const IndexPage = ({ data }) => {
   const { basics, resume } = data
   return (
-    <Layout sections={sections}>
+    <Layout sections={sections} profiles={basics.profiles}>
       <SEO title="Home" />
       <Developer {...basics} />
       <Education {...resume} />
