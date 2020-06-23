@@ -14,7 +14,7 @@ export const SchoolItem = ({
   <VerticalTimelineElement
     className="vertical-timeline-element--education"
     date={`${startDate} ${endDate}`}
-    iconStyle={{ background: "rgb(70,151,233)", color: "#fff" }}
+    iconStyle={{ background: "rgb(144,205,244)", color: "#fff" }}
     icon={<MdSchool />}
   >
     <h3 className="vertical-timeline-element-title">{institution}</h3>
