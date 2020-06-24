@@ -1,8 +1,9 @@
 import React from "react"
 import { graphql, StaticQuery } from "gatsby"
 import BackgroundImage from "gatsby-background-image"
+import PropTypes from "prop-types"
 
-const BackgroundSection = ({ className, children }) => (
+const BackgroundSection = props => (
   <StaticQuery
     query={graphql`
       query {
@@ -19,13 +20,11 @@ const BackgroundSection = ({ className, children }) => (
       const imageData = data.desktop.childImageSharp.fluid
       return (
         <BackgroundImage
+          {...props}
           Tag="section"
-          className={className}
           fluid={imageData}
           backgroundColor={`#040e18`}
-        >
-          {children}
-        </BackgroundImage>
+        />
       )
     }}
   />
