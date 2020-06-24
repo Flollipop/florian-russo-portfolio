@@ -1,13 +1,11 @@
 import React from "react"
 import PropTypes from "prop-types"
 import Profiles from "./profiles"
+import BackgroundSection from "./backgroundSection"
 
 const Developer = ({ label, headline, name, picture, summary, profiles }) => (
-  <section
+  <BackgroundSection
     className="font-sans antialiased bg-center bg-cover flex justify-center items-center py-6 px-3 min-h-screen"
-    style={{
-      backgroundImage: 'url("https://source.unsplash.com/1L71sPT5XKc")',
-    }}
     id="about"
   >
     <div className="max-w-md rounded flex-col shadow-lg bg-gray-100 bg-opacity-15 p-1 shadow-2xl m-0">
@@ -18,7 +16,7 @@ const Developer = ({ label, headline, name, picture, summary, profiles }) => (
               <img
                 className="h-32 w-32 rounded-full shadow-2xl"
                 src={picture}
-                alt=""
+                alt={name}
               />
             </div>
             <div className="flex-initial self-center text-center md:text-left px-3 ">
@@ -47,7 +45,7 @@ const Developer = ({ label, headline, name, picture, summary, profiles }) => (
         </div>
       </div>
     </div>
-  </section>
+  </BackgroundSection>
 )
 
 Developer.propTypes = {
