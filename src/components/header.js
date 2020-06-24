@@ -24,7 +24,7 @@ const Header = ({ siteTitle, sections }) => (
     </div>
     <div className="text-sm w-full flex-grow flex h-16">
       {sections.map(sectionLabel => (
-        <HeaderButton label={sectionLabel} id={sectionLabel} />
+        <HeaderButton label={sectionLabel} key={`${sectionLabel}`} />
       ))}
     </div>
   </nav>
