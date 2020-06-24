@@ -1,14 +1,19 @@
 import PropTypes from "prop-types"
 import React from "react"
+import { Link } from "react-scroll"
 
 function HeaderButton({ label, href }) {
   return (
-    <a
-      href={`#${href ? href : label.toLowerCase()}`}
-      className="flex w-24 justify-center text-white hover:bg-gray-700 h-16 py-6 px-4 hover:border-solid border-blue-100 hover:border-b-2"
+    <Link
+      activeClass="active"
+      spy={true}
+      smooth={true}
+      duration={500}
+      to={`${href ? href : label.toLowerCase()}`}
+      className="flex w-24 justify-center text-white hover:bg-gray-700 h-16 py-6 px-4 hover:border-solid border-blue-100 hover:border-b-2 cursor-pointer select-none"
     >
       {label}
-    </a>
+    </Link>
   )
 }
 
