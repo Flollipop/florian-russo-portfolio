@@ -128,6 +128,13 @@ module.exports = {
     },
     "gatsby-plugin-sitemap",
     "gatsby-plugin-robots-txt",
+    {
+      resolve: `gatsby-plugin-purgecss`,
+      options: {
+        printRejected: false, // Print removed selectors and processed file names
+        tailwind: true, // Enable tailwindcss support
+      },
+    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
