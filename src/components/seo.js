@@ -30,7 +30,7 @@ function SEO({ description, lang, meta }) {
 
   const title = site.siteMetadata.title
   const metaDescription = description || site.siteMetadata.description
-  const photoUrl = basics.url
+  const photoUrl = basics.picture
   return (
     <Helmet
       htmlAttributes={{
