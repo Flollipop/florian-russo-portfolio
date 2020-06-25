@@ -13,7 +13,7 @@ const IndexPage = ({ data }) => {
   const { basics, resume } = data
   return (
     <Layout sections={sections} profiles={basics.profiles}>
-      <SEO title="Home" />
+      <SEO />
       <Developer {...basics} />
       <Education {...resume} />
       <Work {...resume} />
