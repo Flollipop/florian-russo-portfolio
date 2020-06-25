@@ -3,6 +3,7 @@ import React from "react"
 import { VerticalTimelineElement } from "react-vertical-timeline-component"
 import "react-vertical-timeline-component/style.min.css"
 import { MdSchool } from "react-icons/md"
+import { formatDatesToDisplay } from "../utils/date"
 
 export const SchoolItem = ({
   institution,
@@ -13,7 +14,7 @@ export const SchoolItem = ({
 }) => (
   <VerticalTimelineElement
     className="vertical-timeline-element--education"
-    date={`${startDate} ${endDate}`}
+    date={formatDatesToDisplay(startDate, endDate)}
     iconStyle={{ background: "rgb(144,205,244)", color: "#fff" }}
     icon={<MdSchool />}
   >
