@@ -3,6 +3,7 @@ module.exports = {
     title: `Florian Russo full stack portfolio`,
     description: `I'm a full stack developer, I love working with react so this website is made with gatsby`,
     author: `Florian Russo`,
+    siteUrl: "https://russo-florian-portfolio.netlify.app/",
   },
   plugins: [
     `gatsby-plugin-postcss`,
