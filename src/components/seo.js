@@ -19,6 +19,7 @@ function SEO({ description, lang, meta, picture }) {
             title
             description
             author
+            siteUrl
           }
         }
         basics {
@@ -29,6 +30,7 @@ function SEO({ description, lang, meta, picture }) {
   )
 
   const title = site.siteMetadata.title
+  const siteUrl = site.siteMetadata.siteurl
   const metaDescription = description || site.siteMetadata.description
   const photoUrl = picture || basics.picture
   return (
@@ -59,6 +61,10 @@ function SEO({ description, lang, meta, picture }) {
           content: photoUrl,
         },
         {
+          property: `og:url`,
+          content: siteUrl,
+        },
+        {
           name: `twitter:card`,
           content: `summary`,
         },
@@ -77,6 +83,10 @@ function SEO({ description, lang, meta, picture }) {
         {
           name: `twitter:image`,
           content: photoUrl,
+        },
+        {
+          name: `twitter:site`,
+          content: siteUrl,
         },
       ].concat(meta)}
     />
