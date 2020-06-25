@@ -3,6 +3,7 @@ import React from "react"
 import { VerticalTimelineElement } from "react-vertical-timeline-component"
 import "react-vertical-timeline-component/style.min.css"
 import { MdWork, MdLocationOn } from "react-icons/md"
+import { formatDatesToDisplay } from "../utils/date"
 
 export const WorkItem = ({
   company,
@@ -11,10 +12,11 @@ export const WorkItem = ({
   summary,
   startDate,
   endDate,
+  isCurrentRole,
 }) => (
   <VerticalTimelineElement
     className="vertical-timeline-element--work"
-    date={`${startDate} ${endDate}`}
+    date={formatDatesToDisplay(startDate, endDate, isCurrentRole)}
     iconStyle={{ background: "rgb(233,154,148)", color: "#fff" }}
     icon={<MdWork />}
   >
