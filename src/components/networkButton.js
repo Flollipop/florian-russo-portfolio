@@ -12,6 +12,7 @@ export const NetworkButton = ({ network, url }) => {
   if (handledNetworks.includes(network)) {
     return (
       <a
+        title={network}
         className="networkButton"
         href={url}
         target="_blank"
