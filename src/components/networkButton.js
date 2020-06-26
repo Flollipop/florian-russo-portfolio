@@ -12,7 +12,7 @@ export const NetworkButton = ({ network, url }) => {
   if (handledNetworks.includes(network)) {
     return (
       <a
-        className="bg-gray-600 opacity-50 hover:opacity-75 p-2 text-2xl rounded-full m-3"
+        className="networkButton"
         href={url}
         target="_blank"
         rel="noopener noreferrer nofollow"
