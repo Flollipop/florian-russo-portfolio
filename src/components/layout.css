@@ -18,6 +18,10 @@
   @apply opacity-75;
 }
 
+.profiles {
+  @apply self-center flex flex-row text-gray-100 border-solid border-t-2 m-3;
+}
+
 .vertical-timeline-element-content {
   @apply border-solid border-t-2 max-w-lg;
 }

@@ -7,7 +7,7 @@ import { NetworkButton } from "./networkButton"
  * @param profiles Array of social media profiles
  */
 const Profiles = ({ profiles }) => (
-  <div className="self-center flex flex-row text-gray-100 border-solid border-t-2 m-3">
+  <div className="profiles">
     {profiles.map(profile => (
       <NetworkButton {...profile} key={profile.network} />
     ))}
