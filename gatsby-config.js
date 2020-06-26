@@ -134,6 +134,16 @@ module.exports = {
         printRejected: false, // Print removed selectors and processed file names
         tailwind: true, // Enable tailwindcss support
         purgeOnly: ["/src/components/layout.css"],
+        whitelist: [
+          "vertical-timeline-element-content",
+          "vertical-timeline-element--work",
+          "vertical-timeline-element-content",
+          "vertical-timeline-element--education",
+          "vertical-timeline-element-content",
+          "vertical-timeline-element-title",
+          "vertical-timeline-element-subtitle",
+          "vertical-timeline-element-subtitle",
+        ],
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
