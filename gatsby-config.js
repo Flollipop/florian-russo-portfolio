@@ -133,7 +133,7 @@ module.exports = {
       options: {
         printRejected: false, // Print removed selectors and processed file names
         tailwind: true, // Enable tailwindcss support
-        purgeOnly: ['/src/components/layout.css']
+        purgeOnly: ["/src/components/layout.css"],
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
