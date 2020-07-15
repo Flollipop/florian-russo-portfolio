@@ -12,10 +12,12 @@
 
 .networkButton {
   @apply bg-gray-600 opacity-50 p-2 text-2xl rounded-full m-3 flex;
+  transition: 0.75s;
 }
 
 .networkButton:hover {
   @apply opacity-75;
+  transition: 0.75s;
 }
 
 .profiles {
