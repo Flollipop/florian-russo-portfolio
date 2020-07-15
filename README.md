@@ -15,6 +15,16 @@ I am a React enthusiast and I also enjoy learning and trying new stuff, I starte
 
 The other tools I decided to try for the first time in this project is netlify for the deployment and tailwind css to experiment a different way to apply styles to components.
 
+Features: 
+* Eslint/Prettier configured
+* SEO ready
+* mobile friendly
+* Continuous deployment with Netlify
+* Use data from gitConnected
+* Google analytics enabled
+* offline feature
+* styled with tailwind css
+
 ## 🛠 Installation & set up project
 
 1. Install Gatsby CLI
