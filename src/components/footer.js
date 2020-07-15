@@ -1,5 +1,6 @@
 import React from "react"
 import PropTypes from "prop-types"
+import { OutboundLink } from "gatsby-plugin-google-analytics"
 import Profiles from "./profiles"
 
 const Footer = ({ name, profiles }) => (
@@ -8,14 +9,14 @@ const Footer = ({ name, profiles }) => (
       made by <span className="font-semibold text-blue-400">{name}</span> ©{" "}
       {new Date().getFullYear()}, Built with
       {` `}
-      <a
+      <OutboundLink
         className="text-purple-500"
         href="https://www.gatsbyjs.org"
         target="_blank"
         rel="noopener noreferrer nofollow"
       >
         Gatsby
-      </a>
+      </OutboundLink>
     </p>
     <Profiles profiles={profiles} />
   </footer>

@@ -1,5 +1,6 @@
 import React from "react"
 import PropTypes from "prop-types"
+import { OutboundLink } from "gatsby-plugin-google-analytics"
 import { handledNetworks, NetWorkIcon } from "./netWorkIcon"
 
 /**
@@ -11,7 +12,7 @@ import { handledNetworks, NetWorkIcon } from "./netWorkIcon"
 export const NetworkButton = ({ network, url }) => {
   if (handledNetworks.includes(network)) {
     return (
-      <a
+      <OutboundLink
         title={network}
         className="networkButton"
         href={url}
@@ -19,7 +20,7 @@ export const NetworkButton = ({ network, url }) => {
         rel="noopener noreferrer nofollow"
       >
         <NetWorkIcon network={network} />
-      </a>
+      </OutboundLink>
     )
   }
   return null
