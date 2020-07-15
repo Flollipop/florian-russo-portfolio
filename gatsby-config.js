@@ -12,7 +12,6 @@ module.exports = {
         trackingId: "UA-172749888-1",
         head: true,
         anonymize: true,
-        respectDNT: true
       },
     },
     `gatsby-plugin-postcss`,
