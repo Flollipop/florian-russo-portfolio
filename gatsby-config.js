@@ -6,6 +6,15 @@ module.exports = {
     siteUrl: "https://russo-florian-portfolio.netlify.app/",
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-172749888-1",
+        head: true,
+        anonymize: true,
+        respectDNT: true
+      },
+    },
     `gatsby-plugin-postcss`,
     `gatsby-plugin-react-helmet`,
     {
@@ -144,12 +153,6 @@ module.exports = {
           "vertical-timeline-element-subtitle",
           "vertical-timeline-element-subtitle",
         ],
-      },
-    },
-    {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        trackingId: "UA-172749888-1",
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
